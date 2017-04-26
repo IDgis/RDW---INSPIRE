@@ -1,0 +1,57 @@
+<featureType>
+  <id>FeatureTypeInfoImpl-c134f91:15b8ba25357:-7ffd</id>
+  <name>TN.RoadTransportNetwork.RoadLink</name>
+  <nativeName>current_wegvakk_restriction</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl-2a7990df:15b8a864e43:-7ffc</id>
+  </namespace>
+  <title>Beperkingen voor Voertuigen</title>
+  <abstract>Fysieke hoogtes van tunnels en kunstwerken gemeten op de rechter kantlijn van de rechter rijstrook. Dit is gemeten ten opzichte van het wegdek. Onderdeel van INSPIRE Annex I - Vervoersnetwerken - Vehicle Restrictions</abstract>
+  <keywords>
+    <string>Vervoersnetwerken\@language=nl\;</string>
+    <string>Transport Networks\@language=en\;</string>
+    <string>Restrictions for vehicles\@language=en\;</string>
+    <string>Beperkingen voor voertuigen\@language=nl\;</string>
+  </keywords>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/plain</type>
+      <metadataType>TC211</metadataType>
+      <content>http://www.nationaalgeoregister.nl/geonetwork/srv/nl/csw?Service=CSW&amp;Request=GetRecordById&amp;Version=2.0.2&amp;id=db1fa1a1-b2f6-4a06-9dd3-780b622043bf&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full</content>
+    </metadataLink>
+  </metadataLinks>
+  <srs>EPSG:28992</srs>
+  <nativeBoundingBox>
+    <minx>18839.54296875</minx>
+    <maxx>278906.03125</maxx>
+    <miny>305775.46875</miny>
+    <maxy>610947.875</maxy>
+    <crs class="projected">EPSG:28992</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>3.337853375918165</minx>
+    <maxx>7.254252526622626</maxx>
+    <miny>50.72603903976129</miny>
+    <maxy>53.48486613020639</maxy>
+    <crs>GEOGCS[&quot;WGS84(DD)&quot;, 
+  DATUM[&quot;WGS84&quot;, 
+    SPHEROID[&quot;WGS84&quot;, 6378137.0, 298.257223563]], 
+  PRIMEM[&quot;Greenwich&quot;, 0.0], 
+  UNIT[&quot;degree&quot;, 0.017453292519943295], 
+  AXIS[&quot;Geodetic longitude&quot;, EAST], 
+  AXIS[&quot;Geodetic latitude&quot;, NORTH]]</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl-2a7990df:15b8a864e43:-7ff9</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

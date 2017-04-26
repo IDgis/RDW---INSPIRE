@@ -1,0 +1,100 @@
+<wms>
+  <id>WMSInfoImpl-2a7990df:15b8a864e43:-7fff</id>
+  <enabled>true</enabled>
+  <name>WMS</name>
+  <title>INSPIRE View service Berperkingen voor Voertuigen</title>
+  <abstrct>Deze View service is gebaseerd op data van de RDW en bestaat uit datasets voor fysieke beperkingen voor voertuigen.</abstrct>
+  <versions>
+    <org.geotools.util.Version>
+      <version>1.1.1</version>
+    </org.geotools.util.Version>
+    <org.geotools.util.Version>
+      <version>1.3.0</version>
+    </org.geotools.util.Version>
+  </versions>
+  <keywords>
+    <string>Transport Networks\@language=en\;</string>
+    <string>Vervoersnetwerken\@language=nl\;</string>
+    <string>infoMapAccessService\@language=en\;\@vocabulary=ISO\;</string>
+  </keywords>
+  <citeCompliant>false</citeCompliant>
+  <schemaBaseURL>http://schemas.opengis.net</schemaBaseURL>
+  <verbose>false</verbose>
+  <metadata>
+    <entry key="kmlSuperoverlayMode">auto</entry>
+    <entry key="kmlReflectorMode">refresh</entry>
+    <entry key="loopContinuously">false</entry>
+    <entry key="kmlPlacemark">false</entry>
+    <entry key="svgAntiAlias">false</entry>
+    <entry key="inspire.spatialDatasetIdentifier"></entry>
+    <entry key="kmlKmscore">40</entry>
+    <entry key="mapWrapping">true</entry>
+    <entry key="pngCompression">25</entry>
+    <entry key="jpegCompression">25</entry>
+    <entry key="inspire.metadataURL">http://nationaalgeoregister.nl/geonetwork/srv/nl/csw?Service=CSW&amp;Request=GetRecordById&amp;Version=2.0.2&amp;id=b85d4a0a-c0f7-42f4-9316-b214d205ca38&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full</entry>
+    <entry key="inspire.language">dut</entry>
+    <entry key="inspire.metadataURLType">application/vnd.ogc.csw.GetRecordByIdResponse_xml</entry>
+    <entry key="advancedProjectionHandling">true</entry>
+    <entry key="maxAllowedFrames">2147483647</entry>
+    <entry key="kmlAttr">true</entry>
+    <entry key="disposalMethod">none</entry>
+    <entry key="inspire.createExtendedCapabilities">true</entry>
+    <entry key="scalehintMapunitsPixel">false</entry>
+    <entry key="framesDelay">1000</entry>
+  </metadata>
+  <srs>
+    <string>28992</string>
+    <string>25830</string>
+    <string>25831</string>
+    <string>25832</string>
+    <string>4258</string>
+    <string>4326</string>
+  </srs>
+  <bboxForEachCRS>true</bboxForEachCRS>
+  <watermark>
+    <enabled>false</enabled>
+    <position>BOT_RIGHT</position>
+    <transparency>100</transparency>
+  </watermark>
+  <interpolation>Nearest</interpolation>
+  <getFeatureInfoMimeTypeCheckingEnabled>true</getFeatureInfoMimeTypeCheckingEnabled>
+  <getFeatureInfoMimeTypes>
+    <string>text/html</string>
+    <string>application/vnd.ogc.gml/3.1.1</string>
+    <string>application/vnd.ogc.gml</string>
+    <string>text/plain</string>
+  </getFeatureInfoMimeTypes>
+  <getMapMimeTypeCheckingEnabled>true</getMapMimeTypeCheckingEnabled>
+  <getMapMimeTypes>
+    <string>image/png</string>
+    <string>image/png; mode=8bit</string>
+    <string>application/pdf</string>
+    <string>image/jpeg</string>
+    <string>application/atom+xml</string>
+    <string>image/gif</string>
+    <string>application/vnd.google-earth.kml+xml</string>
+    <string>image/geotiff</string>
+    <string>image/svg+xml</string>
+    <string>image/geotiff8</string>
+    <string>application/vnd.google-earth.kml+xml;mode=networklink</string>
+    <string>image/tiff</string>
+    <string>application/vnd.google-earth.kmz</string>
+    <string>image/tiff8</string>
+  </getMapMimeTypes>
+  <authorityURLs>
+    <AuthorityURL>
+      <name>NL.RDW</name>
+      <href>http://www.rdw.nl/</href>
+    </AuthorityURL>
+  </authorityURLs>
+  <identifiers>
+    <Identifier>
+      <authority>NL.RDW</authority>
+      <identifier>RestrictionForVehicles-root</identifier>
+    </Identifier>
+  </identifiers>
+  <maxBuffer>0</maxBuffer>
+  <maxRequestMemory>0</maxRequestMemory>
+  <maxRenderingTime>0</maxRenderingTime>
+  <maxRenderingErrors>0</maxRenderingErrors>
+</wms>

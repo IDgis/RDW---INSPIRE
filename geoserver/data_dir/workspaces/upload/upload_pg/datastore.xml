@@ -1,0 +1,22 @@
+<dataStore>
+  <id>DataStoreInfoImpl-c134f91:15b8ba25357:-7ff3</id>
+  <name>upload_pg</name>
+  <type>Directory of spatial files (shapefiles)</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-2a7990df:15b8a864e43:-7ffb</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="charset">ISO-8859-1</entry>
+    <entry key="filetype">shapefile</entry>
+    <entry key="create spatial index">false</entry>
+    <entry key="memory mapped buffer">false</entry>
+    <entry key="timezone">Etc/UTC</entry>
+    <entry key="enable spatial index">true</entry>
+    <entry key="namespace">http://upload.rdw-inspire.nl</entry>
+    <entry key="cache and reuse memory maps">true</entry>
+    <entry key="url">file:workspaces/upload</entry>
+    <entry key="fstype">shape</entry>
+  </connectionParameters>
+  <__default>false</__default>
+</dataStore>

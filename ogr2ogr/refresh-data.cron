@@ -1,0 +1,1 @@
+0 * * * * root /bin/bash /opt/refresh-scripts/refresh-data.sh /opt/refresh-scripts/refresh-data.ini
