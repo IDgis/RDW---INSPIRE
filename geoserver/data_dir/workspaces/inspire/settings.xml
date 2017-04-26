@@ -1,0 +1,25 @@
+<settings>
+  <id>SettingsInfoImpl-5f284f6d:15b96ab6fe6:-7fff</id>
+  <workspace>
+    <id>WorkspaceInfoImpl-2a7990df:15b8a864e43:-7ffd</id>
+    <name>inspire</name>
+  </workspace>
+  <contact>
+    <id>contact</id>
+    <contactEmail>inspire@rdw.nl</contactEmail>
+    <contactOrganization>RDW – Ontheffingen</contactOrganization>
+  </contact>
+  <charset>UTF-8</charset>
+  <numDecimals>4</numDecimals>
+  <verbose>true</verbose>
+  <verboseExceptions>false</verboseExceptions>
+  <metadata>
+    <map>
+      <entry>
+        <string>quietOnNotFound</string>
+        <boolean>false</boolean>
+      </entry>
+    </map>
+  </metadata>
+  <localWorkspaceIncludesPrefix>false</localWorkspaceIncludesPrefix>
+</settings>

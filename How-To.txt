@@ -1,0 +1,12 @@
+$ docker-machine create --driver virtualbox rdw-inspire
+$ docker-machine env rdw-inspire
+
+docker cp D:\Projecten\RDW-INSPIRE\Beperkingen_voor_Voertuigen_28992 docker_ogr2ogr_1:/var/lib/shapefiles
+
+ogrinfo PG:"host=rdw_db_1 user=postgres dbname=rdw_inspire password=postgres" -sql "Drop table current_wegvakk_restriction;"
+
+ogr2ogr -a_srs EPSG:28992 -f "PostgreSQL" PG:"host=rdw_db_1 user=postgres dbname=rdw_inspire password=postgres" /opt/geoserver/data_dir/workspaces/upload/current_wegvakk_restriction.shp -nlt PROMOTE_TO_MULTI -mapFieldType Date=String -lco GEOMETRY_NAME=the_geom -lco 'COLUMN_TYPES=maximum_he=numeric(24,15),maximum_le=numeric(24,15),maximum_si=numeric(24,15),maximum_wi=numeric(24,15),maximum_to=numeric(24,15)' -nln current_wegvakk_restriction
+
+ogr2ogr -a_srs EPSG:28992 -f "PostgreSQL" PG:"host=192.168.99.100 user=postgres dbname=rdw_inspire password=postgres" D:\Projecten\RDW-INSPIRE\current_wegvakk_restriction\current_wegvakk_restriction.shp -nlt PROMOTE_TO_MULTI -fieldTypeToString Date -lco GEOMETRY_NAME=the_geom -lco COLUMN_TYPES=maximum_he=numeric(24,15),maximum_le=numeric(24,15),maximum_si=numeric(24,15),maximum_wi=numeric(24,15),maximum_to=numeric(24,15) -nln current_wegvakk_restriction
+
+curl -u inspire_upload:VNp42W3shLWqf9bW -v -XPUT -H "Content-type: application/zip" --data-binary @D:\Projecten\RDW-INSPIRE\current_wegvakk_restriction.zip "http://rdw-inspire.idgis.nl/rest/workspaces/upload/datastores/upload_pg/file.shp?configure=none&update=overwrite"

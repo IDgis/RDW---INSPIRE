@@ -1,0 +1,27 @@
+<layer>
+  <name>TN.RoadTransportNetwork.RoadLink</name>
+  <id>LayerInfoImpl-c134f91:15b8ba25357:-7ffc</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--20c9920a:15b90e75946:-7ffd</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-c134f91:15b8ba25357:-7ffd</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <authorityURLs>
+    <AuthorityURL>
+      <name>NL.RDW</name>
+      <href>http://www.rdw.nl/</href>
+    </AuthorityURL>
+  </authorityURLs>
+  <identifiers>
+    <Identifier>
+      <authority>NL.RDW</authority>
+      <identifier>RestrictionForVehicles</identifier>
+    </Identifier>
+  </identifiers>
+</layer>
