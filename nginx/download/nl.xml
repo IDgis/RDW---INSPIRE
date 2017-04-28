@@ -3,12 +3,12 @@
   <title xml:lang="nl">INSPIRE Download service Beperkingen voor Voertuigen</title>
   <subtitle xml:lang="nl">Deze Download service is gebaseerd op data van RDW en bestaat uit een datasets voor fysieke beperkingen voor voertuigen.</subtitle>
   <link href="http://www.nationaalgeoregister.nl/geonetwork/srv/nl/csw?Service=CSW&amp;Request=GetRecordById&amp;Version=2.0.2&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full&amp;id=13dace26-2ddc-410d-9d1f-bcdc4c982b6c"  rel="describedby" type="application/vnd.iso.19139+xml" />
-  <link href="http://rdw-inspire.idgis.nl/www/download/nl.xml" rel="self" type="application/atom+xml" hreflang="nl" title="Dit document" />
-<!--  <link rel="search" href="http://rdw-inspire.idgis.nl/www/search/opensearchdescription.xml" type="application/opensearchdescription+xml" title="Open Search document voor INSPIRE Download service Beschermde gebieden" /> -->
+  <link href="http://inspire.rdw.nl/www/download/nl.xml" rel="self" type="application/atom+xml" hreflang="nl" title="Dit document" />
+<!--  <link rel="search" href="http://inspire.rdw.nl/www/search/opensearchdescription.xml" type="application/opensearchdescription+xml" title="Open Search document voor INSPIRE Download service Beschermde gebieden" /> -->
 
   <link href="http://www.nationaalgeoregister.nl/geonetwork/opensearch/dut/13dace26-2ddc-410d-9d1f-bcdc4c982b6c/OpenSearchDescription.xml" rel="search" type="application/opensearchdescription+xml" title="INSPIRE Download service Beperkingen voor Voertuigen"/>
   
-  <id>http://rdw-inspire.idgis.nl/www/download/nl.xml</id>
+  <id>http://inspire.rdw.nl/www/download/nl.xml</id>
   <rights>Geen beperking</rights>
   <updated>2017-04-13T04:00:40</updated>
   <author>
@@ -22,9 +22,9 @@
 	<inspire_dls:spatial_dataset_identifier_namespace>http://www.rdw.nl</inspire_dls:spatial_dataset_identifier_namespace>
 	<link href="http://www.nationaalgeoregister.nl/geonetwork/srv/nl/csw?Service=CSW&amp;Request=GetRecordById&amp;Version=2.0.2&amp;id=db1fa1a1-b2f6-4a06-9dd3-780b622043bf&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full"
   rel="describedby" type="application/xml" />
-	<link rel="alternate" href="http://rdw-inspire.idgis.nl/www/download/data/Beperkingen_voor_Voertuigen_nl.xml" type="application/atom+xml" hreflang="nl" title="Feed bevattende de Beperkingen voor Voertuigen dataset" />
-	<link rel="alternate" href="http://rdw-inspire.idgis.nl/www/download/data/Beperkingen_voor_Voertuigen_nl.xml" type="text/html" hreflang="nl" title="Feed bevattende de Beperkingen voor Voertuigen dataset" />
-    <id>http://rdw-inspire.idgis.nl/www/download/data/Beperkingen_voor_Voertuigen_nl.xml</id>
+	<link rel="alternate" href="http://inspire.rdw.nl/www/download/data/Beperkingen_voor_Voertuigen_nl.xml" type="application/atom+xml" hreflang="nl" title="Feed bevattende de Beperkingen voor Voertuigen dataset" />
+	<link rel="alternate" href="http://inspire.rdw.nl/www/download/data/Beperkingen_voor_Voertuigen_nl.xml" type="text/html" hreflang="nl" title="Feed bevattende de Beperkingen voor Voertuigen dataset" />
+    <id>http://inspire.rdw.nl/www/download/data/Beperkingen_voor_Voertuigen_nl.xml</id>
     <rights>Geen beperking</rights>
     <updated>2017-04-13T04:00:40</updated>
     <summary>
