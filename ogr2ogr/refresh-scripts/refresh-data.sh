@@ -17,7 +17,7 @@ echo "$(date) start" >> $log_file
 
 ogrinfo PG:"host=rdw_db_1 user=postgres dbname=rdw_inspire password=postgres" -sql "Drop table $postgis_name;"
 
-ogr2ogr -a_srs EPSG:28992 -f "PostgreSQL" PG:"host=rdw_db_1 user=postgres dbname=rdw_inspire password=postgres" /opt/geoserver/data_dir/workspaces/upload/$postgis_name.shp -nlt PROMOTE_TO_MULTI -mapFieldType Date=String -lco GEOMETRY_NAME=the_geom -lco 'COLUMN_TYPES=maximum_he=numeric(24,15),maximum_le=numeric(24,15),maximum_si=numeric(24,15),maximum_wi=numeric(24,15),maximum_to=numeric(24,15)' -nln ${postgis_name} > $log_file 2>&1
+ogr2ogr -a_srs EPSG:28992 -f "PostgreSQL" PG:"host=rdw_db_1 user=postgres dbname=rdw_inspire password=postgres" /opt/geoserver/data_dir/workspaces/upload/$postgis_name.shp -nlt PROMOTE_TO_MULTI -mapFieldType Date=String -lco GEOMETRY_NAME=the_geom -lco 'COLUMN_TYPES=maximum_he=numeric(24,15),maximum_le=numeric(24,15),maximum_si=numeric(24,15),maximum_wi=numeric(24,15),maximum_to=numeric(24,15)' -nln ${postgis_name} >> $log_file 2>&1
 exitcode=$?
 if [ $exitcode -gt 0 ]
 then
@@ -39,11 +39,11 @@ for srid in ${srs[@]}; do
 	mkdir -p $shp_temp_location
 
 	# zorg dat de error output van ogr2ogr in  de log terecht komt
-	ogr2ogr -overwrite -f "ESRI Shapefile" $shp_temp_location -s_srs "EPSG:${srid}" -t_srs "EPSG:${srid}" PG:"host=${pgserver} user=${pguser} dbname=${pgdatabase} password=${pgpassword}" -nln ${file_name}_${srid} ${postgis_name} > $log_file 2>&1
+	ogr2ogr -overwrite -f "ESRI Shapefile" $shp_temp_location -s_srs "EPSG:${srid}" -t_srs "EPSG:${srid}" PG:"host=${pgserver} user=${pguser} dbname=${pgdatabase} password=${pgpassword}" -nln ${file_name}_${srid} ${postgis_name} >> $log_file 2>&1
 	exitcode=$?
 	file_type=$(file -ib $shp_tmp_file)
 	echo $file_type
-	if [ "$file_type" != "application/octet-stream; charset=binary" || [ $exitcode -gt 0 ]]
+	if [ "$file_type" != "application/octet-stream; charset=binary" ] || [ $exitcode -gt 0 ]
 	then
 		logger "file:$shp_tmp_file not a shape file"
 		echo  "file:$shp_tmp_file not a shape file" >> $log_file
@@ -56,7 +56,7 @@ for srid in ${srs[@]}; do
 		echo x$srid
 		if [ x$srid = "x28992" ]
 		then
-			cp ./rd.prj ${shp_temp_location}${file_name}_${srid}.prj
+			cp /opt/refresh-scripts/rd.prj ${shp_temp_location}${file_name}_${srid}.prj
 		fi
 		rm $zip_file
 		zip -jm $zip_file ${shp_tmp_file%.*}.*
@@ -64,7 +64,7 @@ for srid in ${srs[@]}; do
 
 	fi
 
-	ogr2ogr -f "GML" $gml_tmp_file -s_srs "EPSG:${srid}" -t_srs "EPSG:${srid}" PG:"host=${pgserver} user=${pguser} dbname=${pgdatabase} password=${pgpassword}" ${postgis_name} > $log_file 2>&1
+	ogr2ogr -f "GML" $gml_tmp_file -s_srs "EPSG:${srid}" -t_srs "EPSG:${srid}" PG:"host=${pgserver} user=${pguser} dbname=${pgdatabase} password=${pgpassword}" ${postgis_name} >> $log_file 2>&1
 	exitcode=$?
 	if grep -q Exception $gml_tmp_file  || [ $exitcode -gt 0 ]
 	then

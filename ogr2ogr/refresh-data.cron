@@ -1,1 +1,1 @@
-0 * * * * root /bin/bash /opt/refresh-scripts/refresh-data.sh /opt/refresh-scripts/refresh-data.ini
+0 * * * * root /bin/bash /opt/refresh-scripts/refresh-data.sh /opt/refresh-scripts/refresh-data.ini >> /opt/refresh-scripts/refresh-data.log 2>&1
