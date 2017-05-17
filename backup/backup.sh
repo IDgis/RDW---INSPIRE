@@ -17,12 +17,16 @@ echo Performing remote backup: $(date)
 . /etc/backup
 
 # copy volume contents to backup folder
+mkdir -p /backup/nginx_logs
 rm -r /backup/nginx_logs/*
 cp -r /var/log/nginx /backup/nginx_logs
+mkdir -p /backup/awstats_result
 rm -r /backup/awstats_result/*
 cp -r /usr/lib/cgi-bin /backup/awstats_result
+mkdir -p /backup/base_atom_data
 rm -r /backup/base_atom_data/*
 cp -r /usr/share/nginx/html/www/download /backup/base_atom_data
+mkdir -p /backup/geoserver_data
 rm -r /backup/geoserver_data/*
 cp -r /opt/geoserver/data_dir /backup/geoserver_data
 
