@@ -13,7 +13,8 @@ mkfifo /opt/fifo
 # tigger 'tail -f' to open fifo
 echo Logging started... > /opt/fifo &
 
-echo "00 5 * * * root /opt/backup.sh > /opt/fifo 2>&1" > /etc/crontab
+#schedule backup before new data is being pushed
+echo "00 22 * * * root /opt/backup.sh > /opt/fifo 2>&1" > /etc/crontab
 
 echo Starting cron...
 
