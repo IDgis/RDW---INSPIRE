@@ -1,0 +1,3 @@
+#Make sure the file is in Unix format, not DOS format
+0 1 * * * root /bin/bash /opt/refresh-scripts/refresh-data.sh /opt/refresh-scripts/refresh-data.ini >> /opt/refresh-scripts/refresh-data.log 2>&1
+# An empty line is required at the end of this file for a valid cron file.
