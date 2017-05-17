@@ -4,14 +4,13 @@ volumes:
   nginx_logs:
   base_atom_data:
   geoserver_data:
+  awstats_result:  
 
 services:
   db:
     build: database
     ports:
-      - "5432:5432"
-    expose:
-     - "5432"
+      - "5432"
     environment:
       DEBUG: "false"
       
@@ -21,12 +20,12 @@ services:
     environment: 
       JAVA_OPTS: "-Xmx1536M -XX:MaxPermSize=756M -Djava.awt.headless=true -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled"
       TOMCAT_EXTRAS: "false"
-      GEOSERVER_PASSWORD: "6KcEadyGVwGrtxKG"
+      GEOSERVER_PASSWORD: ${GEOSERVER_PASSWORD}
       PROXY_BASE_URL: "http://inspire.rdw.nl/"
     links: 
       - db
     ports:
-      - "8080:8080"
+      - "8080"
     volumes:
       - geoserver_data:/opt/geoserver/data_dir
   ogr2ogr:
@@ -50,6 +49,32 @@ services:
     volumes:
       - nginx_logs:/var/log/nginx
       - base_atom_data:/usr/share/nginx/html/www/download
+
+  awstats:
+    build:
+      context: ./awstats
+    tty: true
+    ports:
+      - "80"
+    volumes:
+      - nginx_logs:/var/log/nginx
+      - awstats_result:/usr/lib/cgi-bin
+            
+  backup:
+    build:
+      context: ./backup
+    tty: true
+    environment:
+      - SFTP_USER=${BACKUP_SFTP_USER}
+      - SFTP_PASSWORD=${BACKUP_SFTP_PASSWORD}
+      - SFTP_HOST=${BACKUP_SFTP_HOST}
+      - SFTP_PORT=${BACKUP_SFTP_PORT}
+      - BACKUP_NAME=backup/rdw-inspire    
+    volumes:
+      - nginx_logs:/var/log/nginx
+      - awstats_result:/usr/lib/cgi-bin
+      - base_atom_data:/usr/share/nginx/html/www/download
+      - geoserver_data:/opt/geoserver/data_dir
             
 networks:
   default:
