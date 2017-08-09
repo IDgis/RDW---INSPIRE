@@ -1,0 +1,1 @@
+jmeter -n -t D:\Projecten\RDW-INSPIRE\git\RDW-INSPIRE-QoSLoadTest-download.jmx -l loadtest-results-download-juli-2017.txt -e -o D:\Projecten\RDW-INSPIRE\Testen-valideren\2017-07\download
