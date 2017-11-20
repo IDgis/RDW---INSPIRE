@@ -27,14 +27,16 @@ then
 fi
 
 
+ogrinfo PG:"host=rdw_db_1 user=postgres dbname=rdw_inspire password=postgres" -sql "@/opt/refresh-scripts/shp_table2transform_input.sql"
+
 for srid in ${srs[@]}; do
 	gml_temp_location=/tmp/gml/
-	gml_file=$file_location/${name}_${srid}_gml.zip
-	gml_tmp_file=$gml_temp_location/${name}_${srid}.gml
+	gml_file=$file_location/${name_notharmonized}_${srid}_gml.zip
+	gml_tmp_file=$gml_temp_location/${name_notharmonized}_${srid}.gml
 	shp_temp_location=/tmp/shp/
-	zip_file=$file_location/${name}_${srid}.zip
+	zip_file=$file_location/${name_notharmonized}_${srid}.zip
 	shp_tmp_file=${shp_temp_location}${file_name}_${srid}.shp
-	atom_file=$file_location/${name}_nl.xml
+	atom_file=$file_location/${name_notharmonized}_nl.xml
 	mkdir -p $gml_temp_location
 	mkdir -p $shp_temp_location
 
@@ -79,14 +81,34 @@ for srid in ${srs[@]}; do
 
 	# get the filesize and change the atom feed
 	size_gml=$(stat -c%s $gml_file)
-	sed -i "/${name}_${srid}.gml/s/length=\"[0-9]*\"/length=\"${size_gml}\"/g" $atom_file
+	sed -i -e "/${name_notharmonized}_${srid}.gml/ s/length=\"[0-9]*\"/length=\"${size_gml}\"/g" $atom_file
 	size_zip=$(stat -c%s $zip_file)
-	sed -i "/${name}_${srid}.zip/s/length=\"[0-9]*\"/length=\"${size_zip}\"/g" $atom_file
+	sed -i -e "/${name_notharmonized}_${srid}.zip/ s/length=\"[0-9]*\"/length=\"${size_zip}\"/g" $atom_file
 
 done
+
+# remove the rdw_hale_1 container if it exists ('|| true' results in the script not exiting if the command fails)
+/usr/host/bin/docker rm rdw_hale_1 || true
+# Generate the harmonized gml's using HALE in a separate container
+/usr/host/bin/docker run --rm --add-host inspire.rdw.nl:192.168.99.100 -it --name  rdw_hale_1 --network rdw-inspire --volumes-from rdw_nginx_1 rdw_hale
+
+#zip the gml and update the length
+
+for ftype in RFV LHV; do
+   #zip the gml_files
+   gml_file=$file_location/RDW-INSPIRE-${ftype}.gml
+   zip_file=$file_location/RDW-INSPIRE-${ftype}_gml.zip
+   zip -jm $zip_file $gml_file
+
+   # get the filesize and change the atom feed
+   size_zip=$(stat -c%s ${zip_file})
+   sed -i -e "/RDW-INSPIRE-${ftype}_gml.zip/ s/length=\"[0-9]*\"/length=\"${size_zip}\"/g" $file_location/${name_harmonized}_nl.xml
+done
+
 date_now=$(date +%FT%T)
-# set metadata date in de atom feed en de service feed
-sed -i "/<updated>/s/<updated>.*<\/updated>/<updated>${date_now}<\/updated>/" $atom_file
+# set metadata date in de atom feeds en de service feed
+sed -i "/<updated>/s/<updated>.*<\/updated>/<updated>${date_now}<\/updated>/" $file_location/${name_notharmonized}_nl.xml
+sed -i "/<updated>/s/<updated>.*<\/updated>/<updated>${date_now}<\/updated>/" $file_location/${name_harmonized}_nl.xml
 sed -i "/<updated>/s/<updated>.*<\/updated>/<updated>${date_now}<\/updated>/" $service_feed
 
 echo "$(date) finished" >> $log_file
