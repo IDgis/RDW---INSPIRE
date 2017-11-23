@@ -10,7 +10,7 @@ services:
   db:
     build: database
     ports:
-      - "5432"
+      - "5432:5432"
     environment:
       DEBUG: "false"
       
@@ -36,6 +36,15 @@ services:
       - db
     volumes:
       - geoserver_data:/opt/geoserver/data_dir
+      - base_atom_data:/usr/share/nginx/html/www/download
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /usr/local/bin:/usr/host/bin
+
+  hale:
+    build: hale
+    links:
+      - db
+    volumes:
       - base_atom_data:/usr/share/nginx/html/www/download
 
   nginx:

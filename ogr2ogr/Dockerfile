@@ -27,7 +27,7 @@ RUN apt-get update \
 #install cron    
 RUN apt-get update \
     && apt-get install cron
-
+    
 #overwrite default contab file (unclear why a cron file in cron.d is not read)
 COPY crontab /etc/crontab
 RUN chmod 0644 /etc/crontab

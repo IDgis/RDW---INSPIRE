@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<alignment xmlns="http://www.esdi-humboldt.eu/hale/alignment">
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C4e352891-92fc-411e-ae04-adaa6d918b04" priority="normal">
+        <source>
+            <class>
+                <type name="long_heavy_vehicles_input" ns="jdbc:postgresql:rdw_inspire:inspire_harmonized"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="LongHeavyVehiclesType" ns="http://inspire.ec.europa.eu/schemas/tn/4.0"/>
+            </class>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.formattedstring" id="Cc919e8ac-6718-45ab-a1ac-783d6711f480" priority="normal">
+        <source name="var">
+            <property>
+                <type name="long_heavy_vehicles_input" ns="jdbc:postgresql:rdw_inspire:inspire_harmonized"/>
+                <child name="lzv"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="LongHeavyVehiclesType" ns="http://inspire.ec.europa.eu/schemas/tn/4.0"/>
+                <child name="allowed_LHV" ns="http://inspire.ec.europa.eu/schemas/tn/4.0"/>
+            </property>
+        </target>
+        <parameter value="{lzv}" name="pattern"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.formattedstring" id="C5ad0d2a1-1a8c-4001-b772-6126a626b262" priority="normal">
+        <source name="var">
+            <property>
+                <type name="long_heavy_vehicles_input" ns="jdbc:postgresql:rdw_inspire:inspire_harmonized"/>
+                <child name="id"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="LongHeavyVehiclesType" ns="http://inspire.ec.europa.eu/schemas/tn/4.0"/>
+                <child name="id" ns="http://www.opengis.net/gml/3.2"/>
+            </property>
+        </target>
+        <parameter value="lhv{id}" name="pattern"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C059f947e-5111-4c7a-91a5-b80c5faf9ea7" priority="normal">
+        <source>
+            <property>
+                <type name="long_heavy_vehicles_input" ns="jdbc:postgresql:rdw_inspire:inspire_harmonized"/>
+                <child name="wvk_id"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="LongHeavyVehiclesType" ns="http://inspire.ec.europa.eu/schemas/tn/4.0"/>
+                <child name="inspireId" ns="http://inspire.ec.europa.eu/schemas/net/4.0"/>
+                <child name="Identifier" ns="http://inspire.ec.europa.eu/schemas/base/3.3"/>
+                <child name="localId" ns="http://inspire.ec.europa.eu/schemas/base/3.3"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.assign.bound" id="Cf8a48eb9-75d4-4f3b-8ce5-638770d62a27" priority="normal">
+        <source name="anchor">
+            <property>
+                <type name="long_heavy_vehicles_input" ns="jdbc:postgresql:rdw_inspire:inspire_harmonized"/>
+                <child name="id"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="LongHeavyVehiclesType" ns="http://inspire.ec.europa.eu/schemas/tn/4.0"/>
+                <child name="inspireId" ns="http://inspire.ec.europa.eu/schemas/net/4.0"/>
+                <child name="Identifier" ns="http://inspire.ec.europa.eu/schemas/base/3.3"/>
+                <child name="namespace" ns="http://inspire.ec.europa.eu/schemas/base/3.3"/>
+            </property>
+        </target>
+        <parameter value="NL.NWB-WEGEN" name="value"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.formattedstring" id="C8ccd502f-6967-4582-9e90-87713360ee90" priority="normal">
+        <source name="var">
+            <property>
+                <type name="long_heavy_vehicles_input" ns="jdbc:postgresql:rdw_inspire:inspire_harmonized"/>
+                <child name="wvk_id"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="LongHeavyVehiclesType" ns="http://inspire.ec.europa.eu/schemas/tn/4.0"/>
+                <child name="networkRef" ns="http://inspire.ec.europa.eu/schemas/net/4.0"/>
+                <child name="choice" ns="http://inspire.ec.europa.eu/schemas/net/4.0/NetworkReference"/>
+                <child name="NetworkReference" ns="http://inspire.ec.europa.eu/schemas/net/4.0"/>
+                <child name="element" ns="http://inspire.ec.europa.eu/schemas/net/4.0"/>
+                <child name="href" ns="http://www.w3.org/1999/xlink"/>
+            </property>
+        </target>
+        <parameter value="NL.NWB-WEGEN.{wvk_id}" name="pattern"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C985a9f07-7bda-4e8b-a251-de6ca04320de" priority="normal">
+        <source>
+            <property>
+                <type name="long_heavy_vehicles_input" ns="jdbc:postgresql:rdw_inspire:inspire_harmonized"/>
+                <child name="valid_from"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="LongHeavyVehiclesType" ns="http://inspire.ec.europa.eu/schemas/tn/4.0"/>
+                <child name="validFrom" ns="http://inspire.ec.europa.eu/schemas/tn/4.0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C2d69887c-c6c2-402a-992e-6c1c505b50ff" priority="normal">
+        <source>
+            <property>
+                <type name="long_heavy_vehicles_input" ns="jdbc:postgresql:rdw_inspire:inspire_harmonized"/>
+                <child name="valid_to"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="LongHeavyVehiclesType" ns="http://inspire.ec.europa.eu/schemas/tn/4.0"/>
+                <child name="validTo" ns="http://inspire.ec.europa.eu/schemas/tn/4.0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+</alignment>
