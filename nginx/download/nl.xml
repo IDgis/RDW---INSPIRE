@@ -6,7 +6,7 @@
   <link href="http://inspire.rdw.nl/www/download/nl.xml" rel="self" type="application/atom+xml" hreflang="nl" title="Dit document" />
 <!--  <link rel="search" href="http://inspire.rdw.nl/www/search/opensearchdescription.xml" type="application/opensearchdescription+xml" title="Open Search document voor INSPIRE Download service Beschermde gebieden" /> -->
 
-  <link href="http://www.nationaalgeoregister.nl/geonetwork/opensearch/dut/13dace26-2ddc-410d-9d1f-bcdc4c982b6c/OpenSearchDescription.xml" rel="search" type="application/opensearchdescription+xml" title="INSPIRE Download service Beperkingen voor Voertuigen"/>
+  <link href="https://www.nationaalgeoregister.nl/geonetwork/opensearch/dut/13dace26-2ddc-410d-9d1f-bcdc4c982b6c/OpenSearchDescription.xml" rel="search" type="application/opensearchdescription+xml" title="INSPIRE Download service Beperkingen voor Voertuigen"/>
   
   <id>http://inspire.rdw.nl/www/download/nl.xml</id>
   <rights>Geen beperking</rights>

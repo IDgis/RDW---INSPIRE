@@ -9,7 +9,7 @@
   <link href="http://inspire-registry.jrc.ec.europa.eu/registers/FCD/items/185" rel="describedby" type="text/html" />
   <link href="http://inspire.rdw.nl/www/download/data/RestrictionForVehicles_harmonized_nl.xml" rel="self" type="application/atom+xml" hreflang="nl" title="This document"/>
   <link href="http://inspire.rdw.nl/www/download/nl.xml" rel="up" type="application/atom+xml" hreflang="nl" title="Het service feed document" />
-  <id>http://inspire.rdw.nl/www/download/data/Beperkingen_voor_Voertuigen_nl.xml</id>
+  <id>http://inspire.rdw.nl/www/download/data/RestrictionForVehicles_harmonized_nl.xml</id>
   <rights>Geen beperking</rights>
   <updated>2017-04-13T04:00:40</updated>
   <author>
