@@ -8,6 +8,7 @@ volumes:
 
 services:
   db:
+    restart: always
     build: database
     ports:
       - "5432:5432"
@@ -15,6 +16,7 @@ services:
       DEBUG: "false"
       
   geoserver:
+    restart: always
     build:
       context: ./geoserver
     environment: 
@@ -29,6 +31,7 @@ services:
     volumes:
       - geoserver_data:/opt/geoserver/data_dir
   ogr2ogr:
+    restart: always
     build:
       context: ./ogr2ogr
     tty: true
@@ -60,6 +63,7 @@ services:
       - base_atom_data:/usr/share/nginx/html/www/download
 
   awstats:
+    restart: always
     build:
       context: ./awstats
     tty: true
@@ -70,6 +74,7 @@ services:
       - awstats_result:/usr/lib/cgi-bin
             
   backup:
+    restart: always
     build:
       context: ./backup
     tty: true
