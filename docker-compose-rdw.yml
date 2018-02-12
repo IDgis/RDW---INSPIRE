@@ -2,9 +2,13 @@ version: '2'
 
 volumes:
   nginx_logs:
+    external:
+  	  name: proxy_nginx_logs
   base_atom_data:
   geoserver_data:
   awstats_result:  
+    external:
+      name: proxy_awstats_result
 
 services:
   db:
