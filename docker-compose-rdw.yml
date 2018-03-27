@@ -5,6 +5,7 @@ volumes:
     external:
       name: proxy_nginx_logs
   base_atom_data:
+  base_schemas:
   geoserver_data:
   awstats_result:  
     external:
@@ -44,6 +45,7 @@ services:
     volumes:
       - geoserver_data:/opt/geoserver/data_dir
       - base_atom_data:/usr/share/nginx/html/www/download
+      - base_schemas:/usr/share/nginx/html/schemas
       - /var/run/docker.sock:/var/run/docker.sock
       - /usr/local/bin:/usr/host/bin
 
