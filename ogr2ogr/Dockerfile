@@ -11,6 +11,10 @@ RUN add-apt-repository ppa:ubuntugis/ppa \
 
 RUN apt-get install zip --assume-yes
 
+COPY download /usr/share/nginx/html/www/download/
+RUN mkdir -p /usr/share/nginx/html/schemas
+COPY schemas /usr/share/nginx/html/schemas
+
 RUN mkdir -p /opt/refresh-scripts
 
 COPY refresh-scripts /opt/refresh-scripts
