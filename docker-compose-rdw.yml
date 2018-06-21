@@ -25,10 +25,11 @@ services:
     build:
       context: ./geoserver
     environment: 
+      VIRTUAL_HOST: "inspire.rdw.local"
       JAVA_OPTS: "-Xmx1536M -XX:MaxPermSize=756M -Djava.awt.headless=true -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled"
       TOMCAT_EXTRAS: "false"
       GEOSERVER_PASSWORD: ${GEOSERVER_PASSWORD}
-      PROXY_BASE_URL: "http://inspire.rdw.nl/"
+      PROXY_BASE_URL: "http://inspire.rdw.local/"
     links: 
       - db
     ports:
@@ -55,23 +56,6 @@ services:
       - db
     volumes:
       - base_atom_data:/usr/share/nginx/html/www/download
-            
-  backup:
-    restart: always
-    build:
-      context: ./backup
-    tty: true
-    environment:
-      - SFTP_USER=${BACKUP_SFTP_USER}
-      - SFTP_PASSWORD=${BACKUP_SFTP_PASSWORD}
-      - SFTP_HOST=${BACKUP_SFTP_HOST}
-      - SFTP_PORT=${BACKUP_SFTP_PORT}
-      - BACKUP_NAME=backup/rdw-inspire    
-    volumes:
-      - nginx_logs:/var/log/nginx
-      - awstats_result:/usr/lib/cgi-bin
-      - base_atom_data:/usr/share/nginx/html/www/download
-      - geoserver_data:/opt/geoserver/data_dir
             
 networks:
   default:
