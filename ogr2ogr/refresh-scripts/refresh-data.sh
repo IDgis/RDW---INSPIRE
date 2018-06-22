@@ -90,7 +90,7 @@ done
 # remove the rdw_hale_1 container if it exists ('|| true' results in the script not exiting if the command fails)
 /usr/host/bin/docker rm rdw_hale_1 || true
 # Generate the harmonized gml's using HALE in a separate container
-/usr/host/bin/docker run --rm -i --name  rdw_hale_1 --network rdw-inspire --volumes-from proxy_nginx_1 rdw_hale
+/usr/host/bin/docker run --rm -i --name  rdw_hale_1 --network rdw-inspire --volumes-from proxy_nginx_1 idgis/rdw-inspire-hale:latest
 
 #zip the gml and update the length
 

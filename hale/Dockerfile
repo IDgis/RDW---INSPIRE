@@ -1,4 +1,4 @@
-FROM wetransform/hale-cli:3.3.1
+FROM wetransform/hale-cli:3.4.0
 
 MAINTAINER IDgis B.V. <info@idgis.nl>
 
