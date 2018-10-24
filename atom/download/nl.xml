@@ -1,5 +1,5 @@
-<feed xmlns="http://www.w3.org/2005/Atom"
-      xmlns:georss="http://www.georss/org/georss" xmlns:inspire_dls="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0" xml:lang="nl">
+<feed  xmlns="http://www.w3.org/2005/Atom"
+       xmlns:georss="http://www.georss.org/georss" xmlns:inspire_dls="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0" xml:lang="nl">
     <title xml:lang="nl">INSPIRE Download service Beperkingen voor Voertuigen</title>
     <subtitle xml:lang="nl">Deze Download service is gebaseerd op data van RDW en bestaat uit een datasets voor fysieke beperkingen voor voertuigen.</subtitle>
     <link href="http://www.nationaalgeoregister.nl/geonetwork/srv/nl/csw?Service=CSW&amp;Request=GetRecordById&amp;Version=2.0.2&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full&amp;id=13dace26-2ddc-410d-9d1f-bcdc4c982b6c"  rel="describedby" type="application/vnd.iso.19139+xml" />
@@ -10,7 +10,7 @@
 
     <id>http://inspire.rdw.nl/www/download/nl.xml</id>
     <rights>Geen beperking</rights>
-    <updated>2018-10-23T01:03:54</updated>
+    <updated>2017-04-13T04:00:40</updated>
     <author>
         <name>RDW - Toelating Exceptioneel Transport</name>
         <email>inspire@rdw.nl</email>
@@ -18,13 +18,15 @@
 
     <entry>
         <title xml:lang="nl">Beperkingen voor Voertuigen</title>
-        <inspire_dls:spatial_dataset_identifier_code>4c039397-df31-49a5-9450-addbcae7238a</inspire_dls:spatial_dataset_identifier_code>
-        <inspire_dls:spatial_dataset_identifier_namespace>http://inspire.rdw.nl/</inspire_dls:spatial_dataset_identifier_namespace>
-        <link href="http://www.nationaalgeoregister.nl/geonetwork/srv/nl/csw?Service=CSW&amp;Request=GetRecordById&amp;Version=2.0.2&amp;id=fe2f9091-1962-4073-9e3b-3e4aeed488a5&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full"  rel="describedby" type="application/xml" />
+        <inspire_dls:spatial_dataset_identifier_code>CROS 5.08.2.40-juni 2011</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>http://www.rdw.nl</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="http://www.nationaalgeoregister.nl/geonetwork/srv/nl/csw?Service=CSW&amp;Request=GetRecordById&amp;Version=2.0.2&amp;id=db1fa1a1-b2f6-4a06-9dd3-780b622043bf&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full"
+              rel="describedby" type="application/xml" />
         <link rel="alternate" href="http://inspire.rdw.nl/www/download/data/RestrictionForVehicles_harmonized_nl.xml" type="application/atom+xml" hreflang="nl" title="Feed bevattende de Beperkingen voor Voertuigen dataset" />
+        <link rel="alternate" href="http://inspire.rdw.nl/www/download/data/RestrictionForVehicles_harmonized_nl.xml" type="text/html" hreflang="nl" title="Feed bevattende de Beperkingen voor Voertuigen dataset" />
         <id>http://inspire.rdw.nl/www/download/data/RestrictionForVehicles_harmonized_nl.xml</id>
         <rights>Geen beperking</rights>
-        <updated>2018-10-23T01:03:54</updated>
+        <updated>2017-04-13T04:00:40</updated>
         <summary>
             Deze dataset bevat de Fysieke hoogtes van tunnels en kunstwerken gemeten op de rechter kantlijn van de rechter rijstrook. Dit is gemeten ten opzichte van het wegdek. Onderdeel van INSPIRE Annex I - Vervoersnetwerken - Vehicle Restrictions .
         </summary>
