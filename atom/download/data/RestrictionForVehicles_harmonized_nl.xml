@@ -1,0 +1,33 @@
+<feed xmlns="http://www.w3.org/2005/Atom"
+      xmlns:georss="http://www.georss.org/georss" xml:lang="nl">
+  <!-- feed title -->
+  <title xml:lang="nl">Download Service voor Beperkingen voor Voertuigen</title>
+  <!-- feed subtitle -->
+  <subtitle xml:lang="nl">INSPIRE Download Service, op data van de RDW
+    en bestaat uit de dataset Beperkingen voor Voertuigen.</subtitle>
+  <link href="http://inspire-registry.jrc.ec.europa.eu/registers/FCD/items/185" rel="describedby" type="text/html" />
+  <link href="http://inspire.rdw.nl/www/download/data/RestrictionForVehicles_harmonized_nl.xml" rel="self" type="application/atom+xml" hreflang="nl" title="This document"/>
+  <link href="http://inspire.rdw.nl/www/download/nl.xml" rel="up" type="application/atom+xml" hreflang="nl" title="Het service feed document" />
+
+  <id>http://inspire.rdw.nl/www/download/data/RestrictionForVehicles_harmonized_nl.xml</id>
+  <rights>Geen beperking</rights>
+  <updated>2018-10-23T01:03:54</updated>
+  <author>
+    <name>RDW - Toelating Exceptioneel Transport</name>
+    <email>inspire@rdw.nl</email>
+  </author>
+
+  <entry>
+    <title xml:lang="nl">Beperkingen voor Voertuigen, incl. beperkingen voor lange, zware voertuigen (GML)</title>
+    <content>This dataset consists of two files. One containing the data of the "Restriction for Vehicles" datatype and
+      a second file containing the properties of road links for long and/or heavy vehicles. This second file is based on a separate schema
+      which is an extension of tn:TransportPropertyType
+    </content>
+    <link rel="section" href="http://inspire.rdw.nl/www/download/data/RDW-INSPIRE-RFV_gml.zip"    type="application/gml+xml;charset=utf-8;version=3.2" hreflang="nl" length="446310"    title="Beperkingen voor Voertuigen, data type = Restriction for Vehicles (GML)" />
+    <link rel="section" href="http://inspire.rdw.nl/www/download/data/RDW-INSPIRE-LHV_gml.zip"    type="application/gml+xml;charset=utf-8;version=3.2" hreflang="nl" length="1178095"    title="Beperkingen voor voertuigen, data type is: Lange Zware Voertuigen (GML)" />
+    <id>http://inspire.rdw.nl/www/download/data/RDW-INSPIRE</id>
+    <updated>2018-10-23T01:03:54</updated>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/28992" label="Amersfoort / RD New" />
+  </entry>
+
+</feed>
