@@ -1,63 +1,94 @@
 version: '2'
 
 volumes:
-  nginx_logs:
-    external:
-      name: proxy_nginx_logs
+  awstats_result:
   base_atom_data:
-  base_schemas:
+  db_data:
   geoserver_data:
-  awstats_result:  
-    external:
-      name: proxy_awstats_result
+  nginx_logs:
 
 services:
-  db:
+  nginx:
+    build: nginx
     restart: always
+    environment:
+      ENABLE_IPV6: "true"
+      VIRTUAL_HOST: "rdw-inspire.idgis.local,inspire.rdw.local"
+    volumes:
+      - base_atom_data:/usr/share/nginx/html/www/download
+      - nginx_logs:/var/log/nginx
+    networks:
+      - rdw-inspire
+      - proxy
+
+  awstats:
+    build: awstats
+    restart: always
+    tty: true
+    volumes:
+      - awstats_result:/usr/lib/cgi-bin
+      - nginx_logs:/var/log/nginx
+    networks:
+      - rdw-inspire
+
+  db:
     build: database
-    ports:
-      - "5432:5432"
+    restart: always
     environment:
       DEBUG: "false"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    networks:
+      - rdw-inspire
       
   geoserver:
+    build: geoserver
     restart: always
-    build:
-      context: ./geoserver
-    environment: 
-      VIRTUAL_HOST: "inspire.rdw.local"
+    environment:
       JAVA_OPTS: "-Xmx1536M -XX:MaxPermSize=756M -Djava.awt.headless=true -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled"
       TOMCAT_EXTRAS: "false"
       GEOSERVER_PASSWORD: ${GEOSERVER_PASSWORD}
       PROXY_BASE_URL: "http://inspire.rdw.local/"
-    links: 
-      - db
-    ports:
-      - "8080"
     volumes:
       - geoserver_data:/opt/geoserver/data_dir
+    networks:
+      - rdw-inspire
+
   ogr2ogr:
+    build: ogr2ogr
     restart: always
-    build:
-      context: ./ogr2ogr
     tty: true
-    links: 
-      - db
+    environment:
+      HALE_IMAGE_VERSION: "2.1.1"
+      NETWORK_NAME: "rdw-inspire"
+      NGINX_CONTAINER: "rdw_nginx_1"
     volumes:
       - geoserver_data:/opt/geoserver/data_dir
       - base_atom_data:/usr/share/nginx/html/www/download
-      - base_schemas:/usr/share/nginx/html/schemas
       - /var/run/docker.sock:/var/run/docker.sock
       - /usr/local/bin:/usr/host/bin
+    networks:
+      - rdw-inspire
 
-  hale:
-    build: hale
-    links:
-      - db
+  backup:
+    image: idgis/file-backup
+    restart: always
+    environment:
+      SFTP_USER: ""
+      SFTP_PASSWORD: ""
+      SFTP_HOST: ""
+      SFTP_PORT: ""
+      BACKUP_NAME: "backup/rdw"
     volumes:
-      - base_atom_data:/usr/share/nginx/html/www/download
+      - awstats_result:/backup/awstats_result
+      - base_atom_data:/backup/base_atom_data
+      - geoserver_data:/backup/geoserver_data
+      - nginx_logs:/backup/nginx_logs
+    networks:
+      - rdw-inspire
             
 networks:
-  default:
-    external:
-      name: rdw-inspire
+  rdw-inspire:
+    external: true
+  proxy:
+    external: true
