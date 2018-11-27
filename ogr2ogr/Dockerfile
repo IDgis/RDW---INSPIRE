@@ -14,6 +14,8 @@ RUN apt-get install zip --assume-yes
 RUN mkdir -p /opt/refresh-scripts
 
 COPY refresh-scripts /opt/refresh-scripts
+COPY init.sh /opt/
+RUN chmod 755 /opt/init.sh
 RUN chmod 755 /opt/refresh-scripts/refresh-data.sh
 
 # Multiple reasons why crontab files are not working: https://askubuntu.com/questions/23009/why-crontab-scripts-are-not-working
@@ -35,4 +37,4 @@ RUN chmod 0644 /etc/crontab
 RUN touch /opt/refresh-scripts/refresh-data.log
 
 # Keep running
-CMD service rsyslog restart && cron && tail -f /opt/refresh-scripts/refresh-data.log
+CMD /opt/init.sh
