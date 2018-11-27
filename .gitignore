@@ -2,3 +2,8 @@
 /.project
 /deploy.sh
 /deploy_rdw.sh
+/proxy
+
+# IntelliJ
+.idea
+RDW_INSPIRE.iml
