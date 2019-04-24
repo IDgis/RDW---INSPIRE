@@ -11,6 +11,8 @@ services:
   nginx:
     build: nginx
     restart: always
+    ports:
+      - "80:80"
     environment:
       ENABLE_IPV6: "true"
       VIRTUAL_HOST: "rdw-inspire.idgis.local,inspire.rdw.local"
@@ -19,7 +21,7 @@ services:
       - nginx_logs:/var/log/nginx
     networks:
       - rdw-inspire
-      - proxy
+      #- proxy
 
   awstats:
     build: awstats
@@ -90,5 +92,5 @@ services:
 networks:
   rdw-inspire:
     external: true
-  proxy:
-    external: true
+  #proxy:
+  #  external: true

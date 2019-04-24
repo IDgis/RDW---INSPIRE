@@ -77,7 +77,7 @@
                 <child name="namespace" ns="http://inspire.ec.europa.eu/schemas/base/3.3"/>
             </property>
         </target>
-        <parameter value="NL.NWB-WEGEN" name="value"/>
+        <parameter value="NL.NWB-WEGEN.RoadLink" name="value"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.formattedstring" id="C8ccd502f-6967-4582-9e90-87713360ee90" priority="normal">
         <source name="var">
@@ -96,7 +96,7 @@
                 <child name="href" ns="http://www.w3.org/1999/xlink"/>
             </property>
         </target>
-        <parameter value="NL.NWB-WEGEN.{wvk_id}" name="pattern"/>
+        <parameter value="NL.NWB-WEGEN.RoadLink.{wvk_id}" name="pattern"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.rename" id="C985a9f07-7bda-4e8b-a251-de6ca04320de" priority="normal">
         <source>
