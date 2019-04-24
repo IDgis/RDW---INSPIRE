@@ -3,7 +3,7 @@
     <name>LongHeavyVehicles</name>
     <author>Herman</author>
     <created>2017-11-07T09:31:36.303+01:00</created>
-    <modified>2017-11-07T11:56:55.293+01:00</modified>
+    <modified>2019-04-24T12:09:08.664+02:00</modified>
     <save-config action-id="project.save" provider-id="eu.esdihumboldt.hale.io.project.hale25.xml.writer">
         <setting name="charset">UTF-8</setting>
         <setting name="projectFiles.separate">false</setting>
