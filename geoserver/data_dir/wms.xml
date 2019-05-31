@@ -2,7 +2,7 @@
   <id>WMSInfoImpl-2a7990df:15b8a864e43:-7fff</id>
   <enabled>true</enabled>
   <name>WMS</name>
-  <title>INSPIRE View service Berperkingen voor Voertuigen</title>
+  <title>View service Beperkingen voor Voertuigen</title>
   <abstrct>Deze View service is gebaseerd op data van de RDW en bestaat uit datasets voor fysieke beperkingen voor voertuigen.</abstrct>
   <versions>
     <org.geotools.util.Version>
