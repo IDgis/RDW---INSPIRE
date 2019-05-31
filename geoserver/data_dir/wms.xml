@@ -38,7 +38,7 @@
     <entry key="maxAllowedFrames">2147483647</entry>
     <entry key="kmlAttr">true</entry>
     <entry key="disposalMethod">none</entry>
-    <entry key="inspire.createExtendedCapabilities">true</entry>
+    <entry key="inspire.createExtendedCapabilities">false</entry>
     <entry key="scalehintMapunitsPixel">false</entry>
     <entry key="framesDelay">1000</entry>
   </metadata>
