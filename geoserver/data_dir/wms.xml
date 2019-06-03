@@ -31,7 +31,7 @@
     <entry key="mapWrapping">true</entry>
     <entry key="pngCompression">25</entry>
     <entry key="jpegCompression">25</entry>
-    <entry key="inspire.metadataURL">http://nationaalgeoregister.nl/geonetwork/srv/nl/csw?Service=CSW&amp;Request=GetRecordById&amp;Version=2.0.2&amp;id=13dace26-2ddc-410d-9d1f-bcdc4c982b6c&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full</entry>
+    <entry key="inspire.metadataURL">http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=13dace26-2ddc-410d-9d1f-bcdc4c982b6c</entry>
     <entry key="inspire.language">dut</entry>
     <entry key="inspire.metadataURLType">application/vnd.ogc.csw.GetRecordByIdResponse_xml</entry>
     <entry key="advancedProjectionHandling">true</entry>
