@@ -1,10 +1,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom"
 	xmlns:georss="http://www.georss.org/georss" xml:lang="nl">
   <!-- feed title -->
-  <title xml:lang="nl">Download Service voor Beperkingen voor Voertuigen</title>
+  <title xml:lang="nl">Download Service voor Beperkingen voor Voertuigen (as-is data)</title>
   <!-- feed subtitle -->
   <subtitle xml:lang="nl">Download Service, op data van de RDW
-  en bestaat uit de dataset Beperkingen voor Voertuigen.</subtitle>
+  en bestaat uit de dataset Beperkingen voor Voertuigen met de 'as-is' data.</subtitle>
 
   <link href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=db1fa1a1-b2f6-4a06-9dd3-780b622043bf" rel="describedby" type="text/html" />
   <link href="http://inspire.rdw.nl/www/download/data/Beperkingen_voor_Voertuigen_nl.xml" rel="self" type="application/atom+xml" hreflang="nl" title="This document"/>
