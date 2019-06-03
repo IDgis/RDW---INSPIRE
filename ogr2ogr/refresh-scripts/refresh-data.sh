@@ -109,6 +109,7 @@ date_now=$(date +%FT%T)
 # set metadata date in de atom feeds en de service feed
 sed -i "/<updated>/s/<updated>.*<\/updated>/<updated>${date_now}<\/updated>/" $file_location/${name_notharmonized}_nl.xml
 sed -i "/<updated>/s/<updated>.*<\/updated>/<updated>${date_now}<\/updated>/" $file_location/${name_harmonized}_nl.xml
-sed -i "/<updated>/s/<updated>.*<\/updated>/<updated>${date_now}<\/updated>/" $service_feed
+sed -i "/<updated>/s/<updated>.*<\/updated>/<updated>${date_now}<\/updated>/" $service_feed_inspire
+sed -i "/<updated>/s/<updated>.*<\/updated>/<updated>${date_now}<\/updated>/" $service_feed_as_is
 
 echo "$(date) finished" >> $log_file

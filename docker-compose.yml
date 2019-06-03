@@ -61,7 +61,7 @@ services:
     restart: always
     tty: true
     environment:
-      HALE_IMAGE_VERSION: "2.1.4"
+      HALE_IMAGE_VERSION: "2.2.0"
       NETWORK_NAME: "rdw-inspire"
       NGINX_CONTAINER: "rdw_nginx_1"
     volumes:

@@ -17,7 +17,7 @@
     <metadataLink>
       <type>text/plain</type>
       <metadataType>TC211</metadataType>
-      <content>http://www.nationaalgeoregister.nl/geonetwork/srv/nl/csw?Service=CSW&amp;Request=GetRecordById&amp;Version=2.0.2&amp;id=db1fa1a1-b2f6-4a06-9dd3-780b622043bf&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full</content>
+      <content>http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=db1fa1a1-b2f6-4a06-9dd3-780b622043bf</content>
     </metadataLink>
   </metadataLinks>
   <srs>EPSG:28992</srs>

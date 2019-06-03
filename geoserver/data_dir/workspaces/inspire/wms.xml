@@ -5,7 +5,7 @@
   </workspace>
   <enabled>true</enabled>
   <name>WMS</name>
-  <title>INSPIRE View service Berperkingen voor Voertuigen</title>
+  <title>View service Beperkingen voor Voertuigen</title>
   <abstrct>Deze View service is gebaseerd op data van de RDW en bestaat uit datasets voor fysieke beperkingen voor voertuigen.</abstrct>
   <versions>
     <org.geotools.util.Version>
@@ -34,14 +34,14 @@
     <entry key="mapWrapping">true</entry>
     <entry key="pngCompression">25</entry>
     <entry key="jpegCompression">25</entry>
-    <entry key="inspire.metadataURL">http://nationaalgeoregister.nl/geonetwork/srv/nl/csw?Service=CSW&amp;Request=GetRecordById&amp;Version=2.0.2&amp;id=b85d4a0a-c0f7-42f4-9316-b214d205ca38&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full</entry>
+    <entry key="inspire.metadataURL">http://nationaalgeoregister.nl/geonetwork/srv/nl/csw?Service=CSW&amp;Request=GetRecordById&amp;Version=2.0.2&amp;id=13dace26-2ddc-410d-9d1f-bcdc4c982b6c&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full</entry>
     <entry key="inspire.language">dut</entry>
     <entry key="inspire.metadataURLType">application/vnd.ogc.csw.GetRecordByIdResponse_xml</entry>
     <entry key="advancedProjectionHandling">true</entry>
     <entry key="maxAllowedFrames">2147483647</entry>
     <entry key="kmlAttr">true</entry>
     <entry key="disposalMethod">none</entry>
-    <entry key="inspire.createExtendedCapabilities">true</entry>
+    <entry key="inspire.createExtendedCapabilities">false</entry>
     <entry key="scalehintMapunitsPixel">false</entry>
     <entry key="framesDelay">1000</entry>
   </metadata>
