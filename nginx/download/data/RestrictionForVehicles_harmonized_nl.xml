@@ -1,10 +1,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom"
       xmlns:georss="http://www.georss.org/georss" xml:lang="nl">
   <!-- feed title -->
-  <title xml:lang="nl">Download Service voor Beperkingen voor Voertuigen</title>
+  <title xml:lang="nl">INSPIRE Download Service voor Beperkingen voor Voertuigen (geharmoniseerd)</title>
   <!-- feed subtitle -->
   <subtitle xml:lang="nl">INSPIRE Download Service, op data van de RDW
-    en bestaat uit de dataset Beperkingen voor Voertuigen.</subtitle>
+    en bestaat uit de dataset Beperkingen voor Voertuigen. (geharmoniseerd)</subtitle>
 
   <link href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=fe2f9091-1962-4073-9e3b-3e4aeed488a5" rel="describedby" type="text/html" />
   <link href="http://inspire.rdw.nl/www/download/data/RestrictionForVehicles_harmonized_nl.xml" rel="self" type="application/atom+xml" hreflang="nl" title="This document"/>
