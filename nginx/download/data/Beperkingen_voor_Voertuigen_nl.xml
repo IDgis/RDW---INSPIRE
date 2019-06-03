@@ -3,12 +3,13 @@
   <!-- feed title -->
   <title xml:lang="nl">Download Service voor Beperkingen voor Voertuigen</title>
   <!-- feed subtitle -->
-  <subtitle xml:lang="nl">INSPIRE Download Service, op data van de RDW 
+  <subtitle xml:lang="nl">Download Service, op data van de RDW
   en bestaat uit de dataset Beperkingen voor Voertuigen.</subtitle>
- 
-  <link href="http://inspire-registry.jrc.ec.europa.eu/registers/FCD/items/185" rel="describedby" type="text/html" />
+
+  <link href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=fe2f9091-1962-4073-9e3b-3e4aeed488a5" rel="describedby" type="text/html" />
   <link href="http://inspire.rdw.nl/www/download/data/Beperkingen_voor_Voertuigen_nl.xml" rel="self" type="application/atom+xml" hreflang="nl" title="This document"/>
-  <link href="http://inspire.rdw.nl/www/download/nl.xml" rel="up" type="application/atom+xml" hreflang="nl" title="Het service feed document" />
+  <link href="http://inspire.rdw.nl/www/download/rdw-as-is.xml" rel="up" type="application/atom+xml" hreflang="nl" title="Het service feed document" />
+
   <id>http://inspire.rdw.nl/www/download/data/Beperkingen_voor_Voertuigen_nl.xml</id>
   <rights>Geen beperking</rights>
   <updated>2017-04-13T04:00:40</updated>
@@ -24,7 +25,7 @@
     <updated>2017-04-13T04:00:40</updated>
     <category term="http://www.opengis.net/def/crs/EPSG/0/28992" label="Amersfoort / RD New" />
   </entry>
-    <entry>
+  <entry>
     <title xml:lang="nl">Beperkingen voor Voertuigen in CRS EPSG:28992 (GML)</title>
     <link rel="alternate" href="http://inspire.rdw.nl/www/download/data/Beperkingen_voor_Voertuigen_28992_gml.zip"    type="application/gml+xml;charset=utf-8;version=3.2" hreflang="nl" length="6809428"    title="Beperkingen voor Voertuigen data als GML in het Rijksdriehoek stelsel(http://www.opengis.net/def/crs/EPSG/0/28992)" />
 	<link rel="enclosure" href="http://inspire.rdw.nl/www/download/data/Beperkingen_voor_Voertuigen_28992_gml.zip"    type="application/gml+xml;charset=utf-8;version=3.2" hreflang="nl" length="6809428"    title="Beperkingen voor Voertuigen data als GML in het Rijksdriehoek stelsel(http://www.opengis.net/def/crs/EPSG/0/28992)" />
