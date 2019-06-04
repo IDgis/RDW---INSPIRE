@@ -17,7 +17,7 @@
 
     <entry>
         <title xml:lang="nl">Beperkingen voor Voertuigen</title>
-        <inspire_dls:spatial_dataset_identifier_code>4c039397-df31-49a5-9450-addbcae7238a</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_code>2196641c-0f8f-416b-a35b-960a5dd6cd08</inspire_dls:spatial_dataset_identifier_code>
         <inspire_dls:spatial_dataset_identifier_namespace>http://inspire.rdw.nl/</inspire_dls:spatial_dataset_identifier_namespace>
 
         <link href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=db1fa1a1-b2f6-4a06-9dd3-780b622043bf" rel="describedby" type="application/xml" />
