@@ -13,8 +13,8 @@
 		    <!-- they have names, titles and abstracts -->
 		  
 			<Title>RoadLink Default Style</Title>
-			<Abstract>The geometry is rendered as a solid green line with a stroke width of 3 pixel
-(#008000). Ends are rounded and have a 2 pixel black casing (#000000).</Abstract>
+			<Abstract>De geometrie wordt gerenderd als een ononderbroken groene lijn met een lijndikte van 3 pixels
+(#008000). De uiteindes zijn afgerond en hebben een 2 pixel brede zwarte rand (#000000).</Abstract>
 			<!-- FeatureTypeStyles describe how to render different features -->
 			<!-- a feature type for lines -->
 
@@ -23,7 +23,7 @@
 				<Rule>
 					<Name>green line</Name>
 					<Title>green line</Title>
-					<Abstract>a solid green line with a stroke width of 3 pixel (#008000)</Abstract>
+					<Abstract>Een ononderbroken groene lijn met een lijndikte van 3 pixels (#008000)</Abstract>
 
 					<!-- like a polygonsymbolizer -->
 					<LineSymbolizer>
