@@ -11,7 +11,7 @@
     <rights>http://inspire.rdw.nl/www/download/Licentie-Geogedeeld-RDW.pdf</rights>
     <updated>2018-10-23T01:03:54</updated>
     <author>
-        <name>RDW - Ontheffingen</name>
+        <name>RDW Ontheffingen</name>
         <email>ontheffingen@rdw.nl</email>
     </author>
 
@@ -30,7 +30,7 @@
             Transportbeperkingen voor buitenwettelijke voertuigen en voertuigcombinaties die in aanmerking komen voor een ontheffing. Het betreft beperkingen
             zoals viaducten, bruggen en wegversmallingen.
             De maximale transporthoogte, -lengte, -breedte, en -massa is gekoppeld aan NWB-wegsegmenten.
-            Informatie over toegang LZV's is als geschikt of ongeschikt weergegeven.
+            Informatie over toegang voor LZV's is als geschikt of ongeschikt weergegeven.
 
             Onderdeel van INSPIRE Annex I - Vervoersnetwerken - Vehicle Restrictions, niet geharmoniseerd.
         </summary>

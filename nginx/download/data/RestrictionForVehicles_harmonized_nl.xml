@@ -13,7 +13,7 @@
   <rights>http://inspire.rdw.nl/www/download/Licentie-Geogedeeld-RDW.pdf</rights>
   <updated>2018-10-23T01:03:54</updated>
   <author>
-    <name>RDW - Ontheffingen</name>
+    <name>RDW Ontheffingen</name>
     <email>ontheffingen@rdw.nl</email>
   </author>
 
@@ -21,7 +21,7 @@
     <title xml:lang="nl">Beperkingen voor voertuigen, inclusief beperkingen voor LZV's</title>
     <content xml:lang="nl">
       Deze dataset bestaat uit twee bestanden.
-      Het eerste bestand bevat de data voor de "Restriction for Vehicles" data type.
+      Het eerste bestand bevat de data voor het "Restriction for Vehicles"-datatype.
       Het tweede bestand bevat de eigenschappen van wegsegmenten voor LZV's. Dit tweede bestand is gebaseerd op een apart schema, welke een extensie is van tn:TransportPropertyType.
     </content>
     <link rel="section" href="http://inspire.rdw.nl/www/download/data/RDW-INSPIRE-RFV_gml.zip" type="application/gml+xml;charset=utf-8;version=3.2" hreflang="nl" length="446310"  title="Beperkingen voor voertuigen, data type is Restriction for Vehicles (GML)" />
