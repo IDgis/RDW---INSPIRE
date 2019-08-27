@@ -13,37 +13,37 @@
   <rights>http://inspire.rdw.nl/www/download/Licentie-Geogedeeld-RDW.pdf</rights>
   <updated>2017-04-13T04:00:40</updated>
   <author>
-    <name>RDW - Ontheffingen</name>
+    <name>RDW Ontheffingen</name>
     <email>ontheffingen@rdw.nl</email>
   </author>
   <entry>
     <title xml:lang="nl">Beperkingen voor voertuigen in CRS EPSG:28992 (Shapefile)</title>
-    <link rel="alternate" href="http://inspire.rdw.nl/www/download/data/Beperkingen_voor_Voertuigen_28992.zip" type="application/x-shapefile" hreflang="nl" length="6148668" title="Beperkingen voor voertuigen als shapefile in het Rijksdriehoek stelsel(http://www.opengis.net/def/crs/EPSG/0/28992)" />
-	<link rel="enclosure" href="http://inspire.rdw.nl/www/download/data/Beperkingen_voor_Voertuigen_28992.zip" type="application/x-shapefile" hreflang="nl" length="6148668" title="Beperkingen voor voertuigen als shapefile in het Rijksdriehoek stelsel(http://www.opengis.net/def/crs/EPSG/0/28992)" />
+    <link rel="alternate" href="http://inspire.rdw.nl/www/download/data/Beperkingen_voor_Voertuigen_28992.zip" type="application/x-shapefile" hreflang="nl" length="6148668" title="Beperkingen voor voertuigen als shapefile in het Rijksdriehoekstelsel (http://www.opengis.net/def/crs/EPSG/0/28992)" />
+    <link rel="enclosure" href="http://inspire.rdw.nl/www/download/data/Beperkingen_voor_Voertuigen_28992.zip" type="application/x-shapefile" hreflang="nl" length="6148668" title="Beperkingen voor voertuigen als shapefile in het Rijksdriehoekstelsel (http://www.opengis.net/def/crs/EPSG/0/28992)" />
     <id>http://inspire.rdw.nl/www/download/data/Beperkingen_voor_Voertuigen_28992.zip</id>
     <updated>2017-04-13T04:00:40</updated>
     <category term="http://www.opengis.net/def/crs/EPSG/0/28992" label="Amersfoort / RD New" />
   </entry>
   <entry>
     <title xml:lang="nl">Beperkingen voor voertuigen in CRS EPSG:28992 (GML)</title>
-    <link rel="alternate" href="http://inspire.rdw.nl/www/download/data/Beperkingen_voor_Voertuigen_28992_gml.zip" type="application/gml+xml;charset=utf-8;version=3.2" hreflang="nl" length="6809428" title="Beperkingen voor voertuigen als GML in het Rijksdriehoek stelsel(http://www.opengis.net/def/crs/EPSG/0/28992)" />
-	<link rel="enclosure" href="http://inspire.rdw.nl/www/download/data/Beperkingen_voor_Voertuigen_28992_gml.zip" type="application/gml+xml;charset=utf-8;version=3.2" hreflang="nl" length="6809428" title="Beperkingen voor voertuigen als GML in het Rijksdriehoek stelsel(http://www.opengis.net/def/crs/EPSG/0/28992)" />
+    <link rel="alternate" href="http://inspire.rdw.nl/www/download/data/Beperkingen_voor_Voertuigen_28992_gml.zip" type="application/gml+xml;charset=utf-8;version=3.2" hreflang="nl" length="6809428" title="Beperkingen voor voertuigen als GML in het Rijksdriehoekstelsel (http://www.opengis.net/def/crs/EPSG/0/28992)" />
+    <link rel="enclosure" href="http://inspire.rdw.nl/www/download/data/Beperkingen_voor_Voertuigen_28992_gml.zip" type="application/gml+xml;charset=utf-8;version=3.2" hreflang="nl" length="6809428" title="Beperkingen voor voertuigen als GML in het Rijksdriehoekstelsel (http://www.opengis.net/def/crs/EPSG/0/28992)" />
     <id>http://inspire.rdw.nl/www/download/data/Beperkingen_voor_Voertuigen_28992_gml.zip</id>
     <updated>2017-04-13T04:00:40</updated>
     <category term="http://www.opengis.net/def/crs/EPSG/0/28992" label="Amersfoort / RD New" />
   </entry>
   <entry>
     <title xml:lang="nl">Beperkingen voor voertuigen in CRS EPSG:4258 (Shapefile)</title>
-    <link rel="alternate" href="http://inspire.rdw.nl/www/download/data/Beperkingen_voor_Voertuigen_4258.zip" type="application/x-shapefile" hreflang="nl" length="5365381" title="Beperkingen voor voertuigen als shapefile in ETRS89(http://www.opengis.net/def/crs/EPSG/0/4258)" />
-	<link rel="enclosure" href="http://inspire.rdw.nl/www/download/data/Beperkingen_voor_Voertuigen_4258.zip" type="application/x-shapefile" hreflang="nl" length="5365381" title="Beperkingen voor voertuigen als shapefile in ETRS89(http://www.opengis.net/def/crs/EPSG/0/4258)" />
+    <link rel="alternate" href="http://inspire.rdw.nl/www/download/data/Beperkingen_voor_Voertuigen_4258.zip" type="application/x-shapefile" hreflang="nl" length="5365381" title="Beperkingen voor voertuigen als shapefile in ETRS89 (http://www.opengis.net/def/crs/EPSG/0/4258)" />
+    <link rel="enclosure" href="http://inspire.rdw.nl/www/download/data/Beperkingen_voor_Voertuigen_4258.zip" type="application/x-shapefile" hreflang="nl" length="5365381" title="Beperkingen voor voertuigen als shapefile in ETRS89 (http://www.opengis.net/def/crs/EPSG/0/4258)" />
     <id>http://inspire.rdw.nl/www/download/data/Beperkingen_voor_Voertuigen_4258.zip</id>
     <updated>2017-04-13T04:00:40</updated>
     <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89" />
   </entry>
     <entry>
     <title xml:lang="nl">Beperkingen voor voertuigen in CRS EPSG:4258 (GML)</title>
-    <link rel="alternate" href="http://inspire.rdw.nl/www/download/data/Beperkingen_voor_Voertuigen_4258_gml.zip" type="application/gml+xml;charset=utf-8;version=3.2" hreflang="nl" length="4771072" title="Beperkingen voor voertuigen als GML in ETRS89(http://www.opengis.net/def/crs/EPSG/0/4258)" />
-	<link rel="enclosure" href="http://inspire.rdw.nl/www/download/data/Beperkingen_voor_Voertuigen_4258_gml.zip" type="application/gml+xml;charset=utf-8;version=3.2" hreflang="nl" length="4771072" title="Beperkingen voor voertuigen als GML in ETRS89(http://www.opengis.net/def/crs/EPSG/0/4258)" />
+    <link rel="alternate" href="http://inspire.rdw.nl/www/download/data/Beperkingen_voor_Voertuigen_4258_gml.zip" type="application/gml+xml;charset=utf-8;version=3.2" hreflang="nl" length="4771072" title="Beperkingen voor voertuigen als GML in ETRS89 (http://www.opengis.net/def/crs/EPSG/0/4258)" />
+    <link rel="enclosure" href="http://inspire.rdw.nl/www/download/data/Beperkingen_voor_Voertuigen_4258_gml.zip" type="application/gml+xml;charset=utf-8;version=3.2" hreflang="nl" length="4771072" title="Beperkingen voor voertuigen als GML in ETRS89 (http://www.opengis.net/def/crs/EPSG/0/4258)" />
     <id>http://inspire.rdw.nl/www/download/data/Beperkingen_voor_Voertuigen_4258_gml.zip</id>
     <updated>2017-04-13T04:00:40</updated>
     <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89" />
