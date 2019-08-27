@@ -1,33 +1,38 @@
 <feed  xmlns="http://www.w3.org/2005/Atom"
        xmlns:georss="http://www.georss.org/georss" xmlns:inspire_dls="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0" xml:lang="nl">
-    <title xml:lang="nl">INSPIRE Download service Beperkingen voor Voertuigen (geharmoniseerd)</title>
-    <subtitle xml:lang="nl">Deze Download service is gebaseerd op data van RDW en bestaat uit een datasets voor fysieke beperkingen voor voertuigen met de geharmoniseerde data.</subtitle>
+    <title xml:lang="nl">Beperkingen voor voertuigen (INSPIRE download-service)</title>
+    <subtitle xml:lang="nl">Deze download service is gebaseerd op data van de RDW en bestaat uit gegevens van fysieke beperkingen voor voertuigen.</subtitle>
 
     <link href="http://inspire.rdw.nl/www/download/rdw-inspire.xml" rel="self" type="application/atom+xml" hreflang="nl" title="Dit document" />
-    <link href="https://www.nationaalgeoregister.nl/geonetwork/opensearch/dut/b85d4a0a-c0f7-42f4-9316-b214d205ca38/OpenSearchDescription.xml" rel="search" type="application/opensearchdescription+xml" title="INSPIRE Download service Beperkingen voor Voertuigen"/>
+    <link href="https://www.nationaalgeoregister.nl/geonetwork/opensearch/dut/b85d4a0a-c0f7-42f4-9316-b214d205ca38/OpenSearchDescription.xml" rel="search" type="application/opensearchdescription+xml" title="Beperkingen voor voertuigen (INSPIRE download-service)"/>
     <link href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=b85d4a0a-c0f7-42f4-9316-b214d205ca38" rel="describedby" type="application/vnd.iso.19139+xml"/>
 
     <id>http://inspire.rdw.nl/www/download/rdw-inspire.xml</id>
-    <rights>Geen beperking</rights>
+    <rights>http://inspire.rdw.nl/www/download/Licentie-Geogedeeld-RDW.pdf</rights>
     <updated>2018-10-23T01:03:54</updated>
     <author>
-        <name>RDW - Toelating Exceptioneel Transport</name>
-        <email>inspire@rdw.nl</email>
+        <name>RDW Ontheffingen</name>
+        <email>ontheffingen@rdw.nl</email>
     </author>
 
     <entry>
-        <title xml:lang="nl">Beperkingen voor Voertuigen</title>
+        <title xml:lang="nl">Beperkingen voor voertuigen</title>
         <inspire_dls:spatial_dataset_identifier_code>4c039397-df31-49a5-9450-addbcae7238a</inspire_dls:spatial_dataset_identifier_code>
         <inspire_dls:spatial_dataset_identifier_namespace>http://inspire.rdw.nl/</inspire_dls:spatial_dataset_identifier_namespace>
 
         <link href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=fe2f9091-1962-4073-9e3b-3e4aeed488a5" rel="describedby" type="application/xml" />
-        <link rel="alternate" href="http://inspire.rdw.nl/www/download/data/RestrictionForVehicles_harmonized_nl.xml" type="application/atom+xml" hreflang="nl" title="Feed bevattende de Beperkingen voor Voertuigen dataset" />
+        <link rel="alternate" href="http://inspire.rdw.nl/www/download/data/RestrictionForVehicles_harmonized_nl.xml" type="application/atom+xml" hreflang="nl" title="Feed bevattende de dataset Beperkingen voor voertuigen" />
 
         <id>http://inspire.rdw.nl/www/download/data/RestrictionForVehicles_harmonized_nl.xml</id>
-        <rights>Geen beperking</rights>
+        <rights>http://inspire.rdw.nl/www/download/Licentie-Geogedeeld-RDW.pdf</rights>
         <updated>2018-10-23T01:03:54</updated>
         <summary>
-            Deze dataset bevat de Fysieke hoogtes van tunnels en kunstwerken gemeten op de rechter kantlijn van de rechter rijstrook. Dit is gemeten ten opzichte van het wegdek. Onderdeel van INSPIRE Annex I - Vervoersnetwerken - Vehicle Restrictions .
+            Transportbeperkingen voor buitenwettelijke voertuigen en voertuigcombinaties die in aanmerking komen voor een ontheffing. Het betreft
+            beperkingen zoals viaducten, bruggen en wegversmallingen.
+            De maximale transporthoogte, -lengte, -breedte en -massa is gekoppeld aan NWB-wegsegmenten.
+            Informatie over toegang voor LZV's  wordt als extensie op het INSPIRE-datamodel in een apart bestand geleverd.
+
+            Onderdeel van INSPIRE Annex I - Vervoersnetwerken - Vehicle Restrictions, geharmoniseerd.
         </summary>
         <georss:polygon>50.74 3.25 53.48 3.25 53.48 7.22 50.74 7.22 50.74 3.25</georss:polygon>
         <category term="http://www.opengis.net/def/crs/EPSG/0/28992" label="Amersfoort / RD New" />

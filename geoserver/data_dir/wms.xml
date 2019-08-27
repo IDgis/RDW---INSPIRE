@@ -2,8 +2,8 @@
   <id>WMSInfoImpl-2a7990df:15b8a864e43:-7fff</id>
   <enabled>true</enabled>
   <name>WMS</name>
-  <title>View service Beperkingen voor Voertuigen</title>
-  <abstrct>Deze View service is gebaseerd op data van de RDW en bestaat uit datasets voor fysieke beperkingen voor voertuigen.</abstrct>
+  <title>Beperkingen voor voertuigen (view-service as-is data)</title>
+  <abstrct>Deze view-service is gebaseerd op data van de RDW en bestaat uit gegevens van fysieke beperkingen voor voertuigen.</abstrct>
   <versions>
     <org.geotools.util.Version>
       <version>1.1.1</version>
@@ -84,7 +84,7 @@
   <authorityURLs>
     <AuthorityURL>
       <name>NL.RDW</name>
-      <href>http://www.rdw.nl/</href>
+      <href>https://www.rdw.nl/</href>
     </AuthorityURL>
   </authorityURLs>
   <identifiers>
